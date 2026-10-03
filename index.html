@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LegalEase-AI-Powered-Legal-Document-Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="logo">⚖ LegalEase</div><div class="tag">AI-Powered Legal Document Generator</div></nav>
+
+<main>
+<section class="hero">
+<h1>Create Legal Documents <span>with AI</span></h1>
+<p>Generate structured legal documents using user inputs and the Gemini AI concept.</p>
+</section>
+
+<section class="grid">
+<div class="card form-card">
+<h2>Document Details</h2>
+<label>Document Type</label>
+<select id="documentType">
+<option value="">Select document type</option>
+<option>Agreement</option><option>Contract</option><option>NDA (Non-Disclosure Agreement)</option>
+<option>Lease Agreement</option><option>Employment Offer Letter</option>
+</select>
+
+<label>Parties Involved</label>
+<textarea id="parties" placeholder="Example: Jane Doe (Service Provider), TechNova Inc. (Client)"></textarea>
+
+<label>Terms & Conditions</label>
+<textarea id="terms" placeholder="Separate each term using semicolons"></textarea>
+
+<label>Effective Date</label>
+<input type="date" id="date">
+
+<button onclick="generateDocument()">✨ Generate Document</button>
+</div>
+
+<div class="card preview-card">
+<div class="preview-head"><h2>Document Preview</h2><button class="edit" onclick="editDocument()">✎ Edit</button></div>
+<div id="preview" class="preview">Your generated legal document will appear here.</div>
+<div class="downloads">
+<button onclick="downloadTXT()">Download TXT</button>
+<button onclick="downloadDOC()">Download DOCX</button>
+<button onclick="downloadPDF()">Download PDF</button>
+</div>
+</div>
+</section>
+
+<section class="info">
+<div><b>🤖 Gemini AI</b><p>AI-powered legal content generation concept.</p></div>
+<div><b>✏ Editable Preview</b><p>Review and modify generated content.</p></div>
+<div><b>📄 Multi-format Export</b><p>TXT, DOCX and PDF output options.</p></div>
+</section>
+</main>
+<footer>LegalEase • Educational Project • AI-assisted document generation</footer>
+<script src="script.js"></script>
+</body>
+</html>
